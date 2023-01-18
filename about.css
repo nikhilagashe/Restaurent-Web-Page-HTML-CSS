@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=East+Sea+Dokdo&family=Lobster&family=Orbitron:wght@700&family=Roboto:wght@100&family=Rubik+80s+Fade&family=Seymour+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("aboutfood.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+.menu{
+    /* border: 2px solid red; */
+    background-color: rgb(6, 65, 42);
+    /* margin-top: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 70px;
+    
+}
+.menu ul{
+    /* border: 2px solid yellow;  */
+    display: flex;
+    margin-top: 0px;
+    margin-right: 250px;
+
+}
+.menu ul li{
+    /* margin-right: 50px ; */
+    list-style: none;
+    /* border-bottom: 3px solid yellow; */
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+.menu ul li:active{
+    background-color: rgb(25, 111, 61);
+}
+.menu ul li:hover{
+    background-color: rgb(25, 111, 61);
+}
+.menu ul li a{
+    text-decoration: none;
+    color: azure;
+}
+.menu ul li .active a{
+    background-color: rgb(159, 220, 197);
+}
+.submenu1{
+    display: none;
+}
+.menu ul li:hover  .submenu1{
+    display: block;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: 12px;
+    width: 180px ;
+    border-radius: 7px;
+}
+.menu ul li:hover  .submenu1 ul{
+    display: block;
+}
+.menu ul li:hover .submenu1 ul li{
+    width: 180px;
+}
+.active{
+    background-color: rgb(25, 111, 61);
+
+}
+
+.pizza{
+    display: none;
+}
+.menu ul li ul li:hover .pizza{
+    display: block;
+    margin-left: 150px ;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: -27px;
+    width: 180px ;
+    border-radius: 7px;
+}
+.burger{
+    display: none;
+}
+.menu ul li ul li:hover .burger{
+    display: block;
+    margin-left: 150px ;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: -27px;
+    width: 180px ;
+    border-radius: 7px;
+}
+.combo{
+    display: none;
+}
+.menu ul li ul li:hover .combo{
+    display: block;
+    margin-left: 150px ;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: -27px;
+    width: 180px ;
+    border-radius: 7px;
+}
+.branch{
+    display: none;
+}
+.menu ul li:hover  .branch{
+    display: block;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: 12px;
+    width: 270px ;
+    border-radius: 7px;
+}
+.menu ul li:hover  .branch ul{
+    display: block;
+}
+.menu ul li:hover .branch ul li{
+    width: 270px;
+}
+
+.contact{
+    display: none;
+}
+.menu ul li:hover  .contact{
+    display: block;
+    position: absolute;
+    background-color: rgb(6, 65, 42);
+    margin-top: 12px;
+    width: 270px ;
+    border-radius: 7px;
+}
+.menu ul li:hover  .contact ul{
+    display: block;
+}
+.menu ul li:hover .contact ul li{
+    width: 270px;
+}
+.box{
+    border: 5px solid rgba(212, 242, 77, 0.415);
+    background-color: rgba(131, 176, 217, 0.821);
+    width: 500px;
+    height: 530px;
+    /* margin-top: 5%; */
+    margin-right: 15%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+.box h1{
+    font-weight: bold;
+    /* font-family: 'Concert One', cursive;
+    font-family: 'East Sea Dokdo', cursive; */
+    font-family: 'Lobster', cursive;
+    
+}
+.box:hover h1{
+    transform: translate(140px,0);
+    translate: linear;
+    transition-duration: 2s;
+}
+.box p{
+    font-family: 'Concert One', cursive;
+}
+.box:hover{
+    transform: scale(1.2);
+    transition: ease 2s;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.video h3{
+    background-color: rgb(1, 8, 14);
+    color: aliceblue;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    border-radius: 10px;
+}
